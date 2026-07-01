@@ -1,7 +1,9 @@
 import './Meno.css'
 import MenoItem from './MenoItem'
 import Logo from './Logo'
+import SearchBox from './SearchBox'
 import { SearchIcon } from './Icon'
+
 export default function Meno(){
     return(
     <nav className="navbar">
@@ -10,13 +12,7 @@ export default function Meno(){
         <MenoItem/>
       </ul>
       <div className="nav-actions">
-
-      <button className="search-btn">
-
-      <SearchIcon/>
-
-      </button>
-
+      <SearchBox/>
       </div>
     </nav>
     )
