@@ -22,26 +22,10 @@ box-shadow:0 2px 12px rgba(0,0,0,.08);
 justify-content: center;
 }
 
-.logo{
-
-position:absolute;
-
-right:20px;
-
-}
-
-.logo img{
-
-height:150px;
-
-}
-
-
 .nav-links{
 display:flex;
-
-gap:40px;
-
+color: black;
+gap:50px;
 list-style:none;
 }
 
@@ -54,5 +38,5 @@ transition:.3s;
 }
 
 .nav-links li:hover{
-color:#ff5ca8;
+color:#a09d4c;
 }

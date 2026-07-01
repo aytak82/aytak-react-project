@@ -1,0 +1,24 @@
+.nav-actions{
+
+position:absolute;
+
+left:20px;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.search-btn{
+
+border:none;
+background:transparent;
+cursor:pointer;
+font-size:22px;
+display:flex;
+align-items:center;
+justify-content:center;
+left: 40px;
+position: relative;
+}

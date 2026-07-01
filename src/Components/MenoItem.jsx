@@ -1,6 +1,10 @@
 export default function MenoItem(){
     let item = [
         {
+            id:1,
+            title:"صفحه اصلی"
+        },
+        {
             id:2,
             title:"درباره ما"
         },
@@ -12,10 +16,7 @@ export default function MenoItem(){
             id:4,
             title:"نمونه کار"
         }, 
-        {
-            id:1,
-            title:"صفحه اصلی"
-        },
+        
     ]
     return(
         <>
