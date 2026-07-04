@@ -46,7 +46,6 @@ color:#a09d4c;
     position: relative;
 }
 
-/* استایل زیرمنو */
 .submenu{
     position: absolute;
     top: 100%;
@@ -68,14 +67,14 @@ color:#a09d4c;
     z-index: 100;
 }
 
-/* با هاور روی آیتم منو، زیرمنو نمایش داده شود */
+
 .menu-item:hover .submenu{
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
-/* آیتم‌های زیرمنو */
+
 .submenu li{
     width: 100%;
 }
