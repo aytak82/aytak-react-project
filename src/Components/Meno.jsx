@@ -2,7 +2,7 @@ import './Meno.css'
 import MenoItem from './MenoItem'
 import Logo from './Logo'
 import SearchBox from './SearchBox'
-import { SearchIcon } from './Icon'
+
 
 export default function Meno(){
     return(
