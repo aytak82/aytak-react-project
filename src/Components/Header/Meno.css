@@ -5,6 +5,14 @@ box-sizing:border-box;
 direction: rtl;
 }
 
+body{
+    margin:0;
+    padding:0;
+    direction: rtl;
+    font-family: Vazirmatn, sans-serif;
+    background:#f6f8fb;
+}
+
 .navbar{
 
 position:relative;

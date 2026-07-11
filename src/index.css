@@ -1,4 +1,5 @@
 :root {
+    direction:rtl;
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
@@ -52,7 +53,14 @@
 
 body {
   margin: 0;
+  direction: rtl;
 }
+
+html,
+body {
+    direction: rtl;
+}
+
 
 #root {
  

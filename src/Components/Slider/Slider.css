@@ -1,0 +1,195 @@
+.slider-section{
+    padding:90px 6%;
+    background:linear-gradient(180deg,#f8fbff,#eef4ff);
+}
+
+.title{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.title h2{
+    font-size:42px;
+    color:#222;
+    margin-bottom:12px;
+}
+
+.title p{
+    color:#666;
+    font-size:18px;
+}
+
+.swiper{
+    padding:15px 5px 70px;
+}
+
+.service-card{
+    height: 400px;
+    background:#fff;
+    display: flex;
+    border-radius:20px;
+    flex-direction: column;
+    padding:35px 28px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+    transition:.4s;
+    border:1px solid #ececec;
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+}
+
+
+.service-card::before{
+
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    background:#8c00ff;
+    opacity:.08;
+    border-radius:50%;
+    top:-70px;
+    left:-70px;
+    transition:.4s;
+}
+
+.service-card:hover::before{
+
+    transform:scale(1.4);
+}
+
+.service-card:hover{
+
+    transform:translateY(-15px);
+    box-shadow:0 30px 60px rgba(0,0,0,.15);
+}
+
+.icon-box{
+
+    width:95px;
+    height:95px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    color:#fff;
+    font-size:42px;
+    transition:.4s;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.service-card:hover .icon-box{
+
+    transform:rotate(12deg) scale(1.15);
+}
+
+.service-card h3{
+
+    margin-top:28px;
+    font-size:24px;
+    color:#222;
+}
+
+.service-card p{
+    flex: 1;
+    margin:18px 0 28px;
+    color:#666;
+    line-height:32px;
+    font-size:15px;
+}
+
+.service-card button{
+
+    border:none;
+    padding:15px 34px;
+    border-radius:50px;
+    background:#7c3aed;
+    color:#fff;
+    cursor:pointer;
+    font-size:15px;
+    transition:.35s;
+}
+
+.service-card button:hover{
+
+    background:#5b21b6;
+    letter-spacing:1px;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    width:25px;
+    height:25px;
+    color:#7c3aed;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+
+    font-size:18px;
+    font-weight:bold;
+}
+
+.swiper-pagination{
+
+    bottom:0 !important;
+}
+
+.swiper-pagination-bullet{
+
+    width:12px;
+    height:12px;
+    background:#d1c4ff;
+    opacity:1;
+}
+
+.swiper-pagination-bullet-active{
+
+    width:28px;
+    border-radius:20px;
+    background:#7c3aed;
+}
+
+@media(max-width:992px){
+
+.service-card{
+
+padding:30px 20px;
+}
+
+.title h2{
+
+font-size:34px;
+}
+
+}
+
+@media(max-width:768px){
+
+.slider-section{
+
+padding:70px 5%;
+
+}
+
+.title h2{
+
+font-size:28px;
+
+}
+
+.title p{
+
+font-size:15px;
+
+}
+
+.icon-box{
+
+width:80px;
+height:80px;
+font-size:34px;
+}
+
+}
