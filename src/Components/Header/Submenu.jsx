@@ -1,4 +1,4 @@
-import "./Meno.css";
+import "./Menu.css";
 
 export default function SubMenu({ submenu }) {
   return (
