@@ -1,6 +1,6 @@
 import SubMenu from "./Submenu";
 
-export default function MenoItem() {
+export default function MenuItem() {
   let item = [
     {
       id: 1,

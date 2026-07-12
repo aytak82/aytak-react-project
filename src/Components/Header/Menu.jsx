@@ -1,5 +1,5 @@
-import "./Meno.css";
-import MenoItem from "./MenoItem";
+import "./Menu.css";
+import MenuItem from "./MenuItem";
 import Logo from "../Logo/Logo";
 import SearchBox from "./SearchBox";
 
@@ -9,7 +9,7 @@ export default function Meno() {
       <nav className="navbar">
         <Logo />
         <ul className="nav-links">
-          <MenoItem />
+          <MenuItem />
         </ul>
         <div className="nav-actions">
           <SearchBox />
