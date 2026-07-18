@@ -1,38 +1,16 @@
+import { Link } from "react-router-dom";
 import SubMenu from "./Submenu";
-
+import menuItems from "./MenuData";
 export default function MenuItem() {
-  let item = [
-    {
-      id: 1,
-      title: "صفحه اصلی",
-    },
-    {
-      id: 2,
-      title: "درباره ما",
-    },
-    {
-      id: 3,
-      title: "ارتباط باما",
-    },
-    {
-      id: 4,
-      title: "نمونه کار",
-    },
-    {
-      id: 5,
-      title: "خدمات",
-      submenu: [
-        { id: 1, title: "طراحی سایت" },
-        { id: 2, title: "طراحی فروشگاه" },
-        { id: 3, title: "سایت شرکتی" },
-      ],
-    },
-  ];
   return (
     <>
-      {item.map((item) => (
+      {menuItems.map((item) => (
         <li className="menu-item" key={item.id}>
-          <a href="#">{item.title}</a>
+          {item.path.startsWith("#") ? (
+            <a href={item.path}>{item.title}</a>
+          ) : (
+            <Link to={item.path}>{item.title}</Link>
+          )}
 
           {item.submenu && <SubMenu submenu={item.submenu} />}
         </li>

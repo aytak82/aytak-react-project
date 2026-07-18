@@ -1,20 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "./Services.css";
+import { services } from "./ServicesData";
+import ServicesCard from "./ServicesCard";
 
-import "./Slider.css";
-
-import { services } from "./SliderData";
-
-import ServiceCard from "./SliderCard";
-
-export default function Slider() {
+export default function Services() {
   return (
-    <section className="slider-section">
+    <section id="services" className="slider-section">
       <div className="title">
         <h2>خدمات طراحی سایت</h2>
 
@@ -47,7 +42,7 @@ export default function Slider() {
       >
         {services.map((service) => (
           <SwiperSlide key={service.id}>
-            <ServiceCard service={service} />
+            <ServicesCard service={service} />
           </SwiperSlide>
         ))}
       </Swiper>

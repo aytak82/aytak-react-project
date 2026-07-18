@@ -10,9 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/estedad": "^5.2.1",
+    "@fontsource/vazirmatn": "^5.2.8",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-icons": "^5.7.0",
+    "react-router-dom": "^7.18.1",
     "swiper": "^14.0.2"
   },
   "devDependencies": {

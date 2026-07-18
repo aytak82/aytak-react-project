@@ -1,5 +1,5 @@
-import "./Slider.css";
-
+import "./Services.css";
+import { Link } from "react-router-dom";
 export default function ServiceCard({ service }) {
   const Icon = service.icon;
 
@@ -13,7 +13,9 @@ export default function ServiceCard({ service }) {
 
       <p>{service.desc}</p>
 
-      <button>مشاهده بیشتر</button>
+      <Link to={`/services/${service.slug}`} className="service-btn">
+        مشاهده بیشتر
+      </Link>
     </div>
   );
 }

@@ -1,20 +1,32 @@
 import "./Menu.css";
 import MenuItem from "./MenuItem";
-import Logo from "../Logo/Logo";
+import Logo from "../../Logo/Logo";
 import SearchBox from "./SearchBox";
+import { useState } from "react";
+import { MenuIcon, Times } from "../Icon/Icon";
+import MobileMenu from "./MobileMenu";
+export default function Menu() {
+  let [showMenu, setShowMenu] = useState(false);
 
-export default function Meno() {
   return (
-    <header>
-      <nav className="navbar">
-        <Logo />
+    <header className="navbar">
+      <Logo />
+
+      <nav>
         <ul className="nav-links">
           <MenuItem />
         </ul>
-        <div className="nav-actions">
-          <SearchBox />
-        </div>
       </nav>
+
+      <div className="nav-actions">
+        <SearchBox />
+      </div>
+
+      <div className="menu-toggle" onClick={() => setShowMenu(!showMenu)}>
+        {showMenu ? <Times /> : <MenuIcon />}
+      </div>
+
+      <MobileMenu showMenu={showMenu} setShowMenu={setShowMenu} />
     </header>
   );
 }

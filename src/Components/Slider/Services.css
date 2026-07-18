@@ -1,6 +1,6 @@
 .slider-section{
     padding:90px 6%;
-    background:linear-gradient(180deg,#f8fbff,#eef4ff);
+    background:linear-gradient(180deg,#fdf8ff,#f8eeff);
 }
 
 .title{
@@ -99,7 +99,7 @@
     font-size:15px;
 }
 
-.service-card button{
+.service-btn{
 
     border:none;
     padding:15px 34px;
@@ -109,9 +109,10 @@
     cursor:pointer;
     font-size:15px;
     transition:.35s;
+    text-decoration: none;
 }
 
-.service-card button:hover{
+.service-btn:hover{
 
     background:#5b21b6;
     letter-spacing:1px;
