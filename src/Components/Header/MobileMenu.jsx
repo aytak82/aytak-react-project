@@ -3,6 +3,7 @@ import menuItems from "./MenuData";
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import SearchBox from "./SearchBox";
+import { Link } from "react-router-dom";
 export default function MobileMenu({ showMenu, setShowMenu }) {
   const [openMenu, setOpenMenu] = useState(null);
 
@@ -44,15 +45,22 @@ export default function MobileMenu({ showMenu, setShowMenu }) {
                         : "mobile-submenu"
                     }
                   >
-                    {item.submenu.map((sub) => (
-                      <a href="#" key={sub.id}>
-                        {sub.title}
-                      </a>
+                    {item.submenu.map((item) => (
+                      <li key={item.id}>
+                        <Link
+                          to={`/services/${item.slug}`}
+                          onClick={() => setShowMenu(false)}
+                        >
+                          {item.title}
+                        </Link>
+                      </li>
                     ))}
                   </div>
                 </>
               ) : (
-                <a href="#">{item.title}</a>
+                <Link to={item.path} onClick={() => setShowMenu(false)}>
+                  {item.title}
+                </Link>
               )}
             </li>
           ))}
